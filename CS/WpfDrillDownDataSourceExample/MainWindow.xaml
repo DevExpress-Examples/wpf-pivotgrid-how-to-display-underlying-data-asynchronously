@@ -38,7 +38,6 @@
                     <dxpg:PivotGridField.DataBinding>
                         <dxpg:DataSourceColumnBinding ColumnName="ExtendedPrice"/>
                     </dxpg:PivotGridField.DataBinding>
-
                 </dxpg:PivotGridField>
                 <dxpg:PivotGridField
                     x:Name="fieldOrderDate"
@@ -83,7 +82,6 @@
                     <dxpg:PivotGridField.DataBinding>
                         <dxpg:DataSourceColumnBinding ColumnName="ProductName" />
                     </dxpg:PivotGridField.DataBinding>
-
                 </dxpg:PivotGridField>
             </dxpg:PivotGridControl.Fields>
         </dxpg:PivotGridControl>
