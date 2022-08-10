@@ -20,9 +20,11 @@ namespace WpfDrillDownDataSourceExample {
         }
         private async void PivotGridControl1_CellSelectionChanged(object sender, RoutedEventArgs e) {
             OrderDrillDownList = new ObservableCollection<MyOrderRow>();
-            var selectionCopy = pivotGridControl1.MultiSelection.SelectedCells.Cast<System.Drawing.Point>().ToList();
+            var selectionCopy = 
+                pivotGridControl1.MultiSelection.SelectedCells.Cast<System.Drawing.Point>().ToList();
             foreach (var cellPoint in selectionCopy) {
-                foreach (PivotDrillDownDataRow record in await pivotGridControl1.CreateDrillDownDataSourceAsync(cellPoint.X, cellPoint.Y)) {
+                foreach (PivotDrillDownDataRow record in 
+                         await pivotGridControl1.CreateDrillDownDataSourceAsync(cellPoint.X, cellPoint.Y)) {
                     
                     OrderDrillDownList.Add(OrderSourceList[record.ListSourceRowIndex]);
                 }
@@ -35,7 +37,8 @@ namespace WpfDrillDownDataSourceExample {
         }
 
         private async void pivotGridControl1_CellClick(object sender, PivotCellEventArgs e) {
-            gridControl1.ItemsSource = await pivotGridControl1.CreateDrillDownDataSourceAsync(e.ColumnIndex, e.RowIndex);
+            gridControl1.ItemsSource = 
+                await pivotGridControl1.CreateDrillDownDataSourceAsync(e.ColumnIndex, e.RowIndex);
         }
     }
 }
