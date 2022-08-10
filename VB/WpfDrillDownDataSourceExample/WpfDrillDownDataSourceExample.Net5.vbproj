@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>WpfDrillDownDataSourceExample</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.DataAccess" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core.Extensions" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Grid.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2019Colorful" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.1.*-*" />
+  </ItemGroup>
+</Project>
