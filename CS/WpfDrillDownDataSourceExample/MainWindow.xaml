@@ -19,8 +19,8 @@
             <RowDefinition Height="30*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60*" />
-            <ColumnDefinition Width="30*" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="0*" />
         </Grid.ColumnDefinitions>
         <dxpg:PivotGridControl
             x:Name="pivotGridControl1"
@@ -91,29 +91,9 @@
             AutoGenerateColumns="AddNew"
             EnableSmartColumnsGeneration="True">
             <dxg:GridControl.View>
-                <dxg:TableView AllowEditing="False" ShowTotalSummary="False" />
+                <dxg:TableView AllowEditing="False" ShowTotalSummary="False" AutoWidth="True" />
             </dxg:GridControl.View>
         </dxg:GridControl>
-        <ScrollViewer
-            Grid.Row="1"
-            Grid.Column="1"
-            VerticalScrollBarVisibility="Auto">
-            <ItemsControl
-                Grid.Row="1"
-                Grid.Column="1"
-                Name="lvOrders">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Button Content="{Binding Path='ID'}" />
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <UniformGrid Columns="3" />
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-            </ItemsControl>
-        </ScrollViewer>
     </Grid>
 
 </dx:ThemedWindow>

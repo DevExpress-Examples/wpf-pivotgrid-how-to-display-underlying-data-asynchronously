@@ -29,7 +29,7 @@ namespace WpfDrillDownDataSourceExample {
                     OrderDrillDownList.Add(OrderSourceList[record.ListSourceRowIndex]);
                 }
             }
-            lvOrders.ItemsSource = OrderDrillDownList;
+            gridControl1.ItemsSource = OrderDrillDownList;
         }
         private void ThemedWindow_Loaded(object sender, RoutedEventArgs e) {
             pivotGridControl1.BestFitArea = DevExpress.Xpf.PivotGrid.FieldBestFitArea.FieldHeader;

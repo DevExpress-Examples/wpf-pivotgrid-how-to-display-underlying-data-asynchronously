@@ -1,6 +1,7 @@
 Imports DevExpress.Xpf.Core
 Imports DevExpress.Xpf.PivotGrid
 Imports System.Collections.ObjectModel
+Imports System.Linq
 Imports System.Windows
 
 Namespace WpfDrillDownDataSourceExample
@@ -31,7 +32,7 @@ Namespace WpfDrillDownDataSourceExample
                     OrderDrillDownList.Add(OrderSourceList(record.ListSourceRowIndex))
                 Next record
             Next cellPoint
-            lvOrders.ItemsSource = OrderDrillDownList
+            gridControl1.ItemsSource = OrderDrillDownList
         End Sub
 
         Private Sub ThemedWindow_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)

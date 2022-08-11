@@ -12,20 +12,19 @@
     mc:Ignorable="d"
     Loaded="ThemedWindow_Loaded"
     Title="Create Drill-Down Data Source Example">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60*" />
             <RowDefinition Height="30*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60*" />
-            <ColumnDefinition Width="30*" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="0*" />
         </Grid.ColumnDefinitions>
         <dxpg:PivotGridControl
             x:Name="pivotGridControl1"
             Grid.Row="0"
-            Grid.ColumnSpan="2"
             UseAsyncMode="true"
             CellClick="pivotGridControl1_CellClick"
             CellSelectionChanged="PivotGridControl1_CellSelectionChanged"
@@ -38,7 +37,6 @@
                     <dxpg:PivotGridField.DataBinding>
                         <dxpg:DataSourceColumnBinding ColumnName="ExtendedPrice"/>
                     </dxpg:PivotGridField.DataBinding>
-
                 </dxpg:PivotGridField>
                 <dxpg:PivotGridField
                     x:Name="fieldOrderDate"
@@ -83,39 +81,17 @@
                     <dxpg:PivotGridField.DataBinding>
                         <dxpg:DataSourceColumnBinding ColumnName="ProductName" />
                     </dxpg:PivotGridField.DataBinding>
-
                 </dxpg:PivotGridField>
             </dxpg:PivotGridControl.Fields>
         </dxpg:PivotGridControl>
         <dxg:GridControl
             x:Name="gridControl1"
-            Grid.Row="1"
             AutoGenerateColumns="AddNew"
+            Grid.Row="1"
             EnableSmartColumnsGeneration="True">
             <dxg:GridControl.View>
-                <dxg:TableView AllowEditing="False" ShowTotalSummary="False" />
+                <dxg:TableView AllowEditing="False" ShowTotalSummary="False" AutoWidth="True"/>
             </dxg:GridControl.View>
         </dxg:GridControl>
-        <ScrollViewer
-            Grid.Row="1"
-            Grid.Column="1"
-            VerticalScrollBarVisibility="Auto">
-            <ItemsControl
-                Grid.Row="1"
-                Grid.Column="1"
-                Name="lvOrders">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Button Content="{Binding Path='ID'}" />
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <UniformGrid Columns="3" />
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-            </ItemsControl>
-        </ScrollViewer>
     </Grid>
-
 </dx:ThemedWindow>
