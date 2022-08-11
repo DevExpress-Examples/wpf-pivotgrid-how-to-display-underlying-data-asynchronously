@@ -12,7 +12,7 @@
     mc:Ignorable="d"
     Loaded="ThemedWindow_Loaded"
     Title="Create Drill-Down Data Source Example">
-
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60*" />
@@ -25,6 +25,7 @@
         <dxpg:PivotGridControl
             x:Name="pivotGridControl1"
             Grid.Row="0"
+            Grid.ColumnSpan="2"
             UseAsyncMode="true"
             CellClick="pivotGridControl1_CellClick"
             CellSelectionChanged="PivotGridControl1_CellSelectionChanged"
@@ -86,12 +87,13 @@
         </dxpg:PivotGridControl>
         <dxg:GridControl
             x:Name="gridControl1"
-            AutoGenerateColumns="AddNew"
             Grid.Row="1"
+            AutoGenerateColumns="AddNew"
             EnableSmartColumnsGeneration="True">
             <dxg:GridControl.View>
-                <dxg:TableView AllowEditing="False" ShowTotalSummary="False" AutoWidth="True"/>
+                <dxg:TableView AllowEditing="False" ShowTotalSummary="False" AutoWidth="True" />
             </dxg:GridControl.View>
         </dxg:GridControl>
     </Grid>
+
 </dx:ThemedWindow>
