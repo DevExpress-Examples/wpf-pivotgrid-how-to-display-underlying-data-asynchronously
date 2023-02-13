@@ -10,7 +10,7 @@ This example demonstrates how to obtain records from the control's underlying da
 
 ![](/images/screenshot.png)
 
-## Files to Look At
+## Files to Review
 
 - [MainWindow.xaml](./CS/WpfDrillDownDataSourceExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfDrillDownDataSourceExample/MainWindow.xaml))
 - [MainWindow.xaml.cs](./CS/WpfDrillDownDataSourceExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfDrillDownDataSourceExample/MainWindow.xaml.vb))
