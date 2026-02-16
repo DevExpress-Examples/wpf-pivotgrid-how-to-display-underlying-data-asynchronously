@@ -33,7 +33,7 @@ The [PivotGridControl.CellSelectionChanged](https://docs.devexpress.com/WPF/DevE
 - [Pivot Grid for WPF - How to Display Underlying (Drill-Down) Records](https://github.com/DevExpress-Examples/how-to-obtain-underlying-data-e2173)
 - [Pivot Grid for WinForms - How to Create the Underlying Data Source (Drill-Down) Asynchronously](https://github.com/DevExpress-Examples/how-to-use-asynchronous-operations-that-return-the-result-e4567)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-pivotgrid-how-to-display-underlying-data-asynchronously&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-pivotgrid-how-to-display-underlying-data-asynchronously&~~~was_helpful=no)
 
